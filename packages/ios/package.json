@@ -1,0 +1,22 @@
+{
+  "name": "@abc/main",
+  "version": "1.0.0",
+  "main": "dist/@abc/main.umd.js",
+  "author": "issac lau <liujun04@aikucun.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "BUILD_NAME=abc ../../node_modules/.bin/kcd-scripts build --bundle umd,umd.min --no-ts-defs",
+    "lint": "../../node_modules/.bin/kcd-scripts lint"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@abc/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}

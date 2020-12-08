@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna clean && lerna bootstrap",
+    "build": "lerna run build --parallel",
+    "test": "kcd-scripts test",
+    "test:update": "npm run test -s -- --coverage --updateSnapshot",
+    "lint": "lerna run lint --parallel",
+    "validate": "kcd-scripts validate",
+    "precommit": "kcd-scripts pre-commit",
+    "format": "kcd-scripts format"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "kcd-scripts": "^7.0.1",
+    "typescript": "^4.0.5"
+  }
+}

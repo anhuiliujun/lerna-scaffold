@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "lib": ["dom", "es6"],
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "noEmit": true,
+    "strict": true
+  },
+  "include": ["packages/*/src"],
+  "compileOnSave": false
+}
